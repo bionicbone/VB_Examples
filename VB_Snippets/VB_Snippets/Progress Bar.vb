@@ -47,8 +47,9 @@ Public Class frmProgressBar
             ' This would update a standard progress bar on the form.
             ProgressBar1.Value = N
 
-            ' NOTE: NEVER use the -1 fix to make the progress bar keep up with code!
-            '       The -1 fix is extremely resourse hungry and WILL slow down fast code by 500%-1000%
+            ' NOTE: NEVER use the -1 fix to make the progress bar keep up with fast code!
+            '       The -1 fix is extremely resource hungry and WILL slow down fast code by 500%-1000%
+            '       Code this fast should be using the hour glass or donut 
 
             If osVer.Major >= 6 And osVer.Minor >= 1 Then                       'Only allowed in Windows 7 or above
                 ' This updates the Task Bar from icon to show the progress.
@@ -56,7 +57,7 @@ Public Class frmProgressBar
             End If
 
             ' This is not required, it's just part of this example and to slow everything down.
-            ' DoEvents stops the Hour Glass in this very tight loop!
+            ' DoEvents stops the Hour Glass / Donut along with the [Not Responding] issue in this very tight loop!
             Me.Refresh()
             Threading.Thread.Sleep(200)
             Application.DoEvents()
