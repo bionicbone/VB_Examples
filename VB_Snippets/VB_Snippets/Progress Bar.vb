@@ -23,9 +23,9 @@ Public Class frmProgressBar
     ' *** --- Paste this code                                                           ***
     ' *************************************************************************************
 
-    ' Create a public variable to hold the handle of the form.
+    ' Create a variable to hold the handle of the form.
     ' this is the form on the Task Bar that will show the progress.
-    Public frmMainFormHandle As Double = 0
+    Dim frmMainFormHandle As Double = 0
 
 
     Private Sub frmProgressBar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -56,8 +56,10 @@ Public Class frmProgressBar
             End If
 
             ' This is not required, it's just part of this example and to slow everything down.
+            ' DoEvents stops the Hour Glass in this very tight loop!
             Me.Refresh()
             Threading.Thread.Sleep(200)
+            Application.DoEvents()
         Next N
 
         ' Standard Form Progress Bars are notorious for not keeping up with code.

@@ -80,10 +80,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmProgressBar.Designer.vb">
-      <DependentUpon>frmProgressBar.vb</DependentUpon>
+    <Compile Include="frmMainSelectionForm.Designer.vb">
+      <DependentUpon>frmMainSelectionForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmProgressBar.vb">
+    <Compile Include="frmMainSelectionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress Bar.Designer.vb">
+      <DependentUpon>Progress Bar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Progress Bar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -101,10 +107,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="SQL Read Example.vb" />
+    <Compile Include="SQL Write Example.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmProgressBar.resx">
-      <DependentUpon>frmProgressBar.vb</DependentUpon>
+    <EmbeddedResource Include="frmMainSelectionForm.resx">
+      <DependentUpon>frmMainSelectionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress Bar.resx">
+      <DependentUpon>Progress Bar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
