@@ -27,6 +27,7 @@ Partial Class frmMainSelectionForm
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -50,7 +51,7 @@ Partial Class frmMainSelectionForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(26, 92)
+        Me.Button2.Location = New System.Drawing.Point(26, 121)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(84, 23)
         Me.Button2.TabIndex = 2
@@ -68,18 +69,28 @@ Partial Class frmMainSelectionForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(26, 121)
+        Me.Button3.Location = New System.Drawing.Point(26, 92)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(84, 23)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "SQL Write"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(26, 150)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(84, 23)
+        Me.Button4.TabIndex = 5
+        Me.Button4.Text = "SQL Update"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 262)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
@@ -96,4 +107,5 @@ Partial Class frmMainSelectionForm
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

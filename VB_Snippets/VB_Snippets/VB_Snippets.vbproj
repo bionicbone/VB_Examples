@@ -108,6 +108,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="SQL Read Example.vb" />
+    <Compile Include="SQL Update Example.vb" />
     <Compile Include="SQL Write Example.vb" />
   </ItemGroup>
   <ItemGroup>
