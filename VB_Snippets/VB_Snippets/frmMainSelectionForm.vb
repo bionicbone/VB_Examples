@@ -27,4 +27,12 @@
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Call CPU()
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        If CheckDatabaseExists("LT5-PC\SQLEXPRESS", "HobbyKingDB") <> False Then
+            Debug.Print("Database Exists")
+        Else
+            Debug.Print("Database Does Not Exist")
+        End If
+    End Sub
 End Class
