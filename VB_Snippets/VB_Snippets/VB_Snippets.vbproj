@@ -80,6 +80,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeTester.vb" />
+    <Compile Include="CPU Example.vb" />
     <Compile Include="frmMainSelectionForm.Designer.vb">
       <DependentUpon>frmMainSelectionForm.vb</DependentUpon>
     </Compile>
@@ -110,6 +112,7 @@
     <Compile Include="SQL Read Example.vb" />
     <Compile Include="SQL Update Example.vb" />
     <Compile Include="SQL Write Example.vb" />
+    <Compile Include="StopWatch Example.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMainSelectionForm.resx">
