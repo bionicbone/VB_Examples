@@ -32,6 +32,7 @@ Partial Class frmMainSelectionForm
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -55,7 +56,7 @@ Partial Class frmMainSelectionForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(26, 121)
+        Me.Button2.Location = New System.Drawing.Point(26, 150)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 23)
         Me.Button2.TabIndex = 2
@@ -73,7 +74,7 @@ Partial Class frmMainSelectionForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(26, 92)
+        Me.Button3.Location = New System.Drawing.Point(26, 121)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(100, 23)
         Me.Button3.TabIndex = 4
@@ -82,7 +83,7 @@ Partial Class frmMainSelectionForm
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(26, 150)
+        Me.Button4.Location = New System.Drawing.Point(26, 179)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(100, 23)
         Me.Button4.TabIndex = 5
@@ -122,14 +123,24 @@ Partial Class frmMainSelectionForm
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(100, 23)
         Me.Button8.TabIndex = 9
-        Me.Button8.Text = "Database Exists?"
+        Me.Button8.Text = "Database Exists ?"
         Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(26, 92)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(100, 23)
+        Me.Button9.TabIndex = 10
+        Me.Button9.Text = "Table Exists ?"
+        Me.Button9.UseVisualStyleBackColor = True
         '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 262)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -156,4 +167,5 @@ Partial Class frmMainSelectionForm
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
 End Class

@@ -35,4 +35,12 @@
             Debug.Print("Database Does Not Exist")
         End If
     End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        If CheckTableExists("LT5-PC\SQLEXPRESS", "HobbyKingDB", "tblHKPrices") <> False Then
+            Debug.Print("Table Exists")
+        Else
+            Debug.Print("Table Does Not Exist")
+        End If
+    End Sub
 End Class

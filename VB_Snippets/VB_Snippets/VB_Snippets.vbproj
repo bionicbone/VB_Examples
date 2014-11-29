@@ -114,6 +114,7 @@
     <Compile Include="SQL Update Example.vb" />
     <Compile Include="SQL Write Example.vb" />
     <Compile Include="StopWatch Example.vb" />
+    <Compile Include="TableExists.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMainSelectionForm.resx">
