@@ -43,4 +43,12 @@
             Debug.Print("Table Does Not Exist")
         End If
     End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Call SQL_Create_Table()
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Call SQL_Create_Database()
+    End Sub
 End Class

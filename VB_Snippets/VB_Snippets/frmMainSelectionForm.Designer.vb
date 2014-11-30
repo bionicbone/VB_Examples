@@ -33,6 +33,8 @@ Partial Class frmMainSelectionForm
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -56,7 +58,7 @@ Partial Class frmMainSelectionForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(26, 150)
+        Me.Button2.Location = New System.Drawing.Point(26, 208)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 23)
         Me.Button2.TabIndex = 2
@@ -74,7 +76,7 @@ Partial Class frmMainSelectionForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(26, 121)
+        Me.Button3.Location = New System.Drawing.Point(26, 179)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(100, 23)
         Me.Button3.TabIndex = 4
@@ -83,7 +85,7 @@ Partial Class frmMainSelectionForm
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(26, 179)
+        Me.Button4.Location = New System.Drawing.Point(26, 237)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(100, 23)
         Me.Button4.TabIndex = 5
@@ -135,11 +137,31 @@ Partial Class frmMainSelectionForm
         Me.Button9.Text = "Table Exists ?"
         Me.Button9.UseVisualStyleBackColor = True
         '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(26, 150)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(100, 23)
+        Me.Button10.TabIndex = 11
+        Me.Button10.Text = "Create Table"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(26, 121)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(100, 23)
+        Me.Button11.TabIndex = 12
+        Me.Button11.Text = "Create Database"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(591, 262)
+        Me.ClientSize = New System.Drawing.Size(591, 275)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
@@ -168,4 +190,6 @@ Partial Class frmMainSelectionForm
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents Button11 As System.Windows.Forms.Button
 End Class
