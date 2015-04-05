@@ -82,6 +82,9 @@
   <ItemGroup>
     <Compile Include="CodeTester.vb" />
     <Compile Include="CPU Example.vb" />
+    <Compile Include="SQL Create Database Example.vb" />
+    <Compile Include="SQL Create Table Example.vb" />
+    <Compile Include="SQL Database Exists.vb" />
     <Compile Include="frmMainSelectionForm.Designer.vb">
       <DependentUpon>frmMainSelectionForm.vb</DependentUpon>
     </Compile>
@@ -113,6 +116,7 @@
     <Compile Include="SQL Update Example.vb" />
     <Compile Include="SQL Write Example.vb" />
     <Compile Include="StopWatch Example.vb" />
+    <Compile Include="SQL Table Exists Example.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMainSelectionForm.resx">

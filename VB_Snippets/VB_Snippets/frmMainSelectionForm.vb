@@ -27,4 +27,28 @@
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Call CPU()
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        If CheckDatabaseExists("LT5-PC\SQLEXPRESS", "HobbyKingDB") <> False Then
+            Debug.Print("Database Exists")
+        Else
+            Debug.Print("Database Does Not Exist")
+        End If
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        If CheckTableExists("LT5-PC\SQLEXPRESS", "HobbyKingDB", "tblHKPrices") <> False Then
+            Debug.Print("Table Exists")
+        Else
+            Debug.Print("Table Does Not Exist")
+        End If
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Call SQL_Create_Table()
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Call SQL_Create_Database()
+    End Sub
 End Class
