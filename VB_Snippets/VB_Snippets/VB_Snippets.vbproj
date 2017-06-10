@@ -110,6 +110,7 @@
     <Compile Include="CodeTester.vb" />
     <Compile Include="CPU Example.vb" />
     <Compile Include="IIF Example.vb" />
+    <Compile Include="Methods Overloaded Example.vb" />
     <Compile Include="SQL Create Database Example.vb" />
     <Compile Include="SQL Create Table Example.vb" />
     <Compile Include="SQL Database Exists.vb" />

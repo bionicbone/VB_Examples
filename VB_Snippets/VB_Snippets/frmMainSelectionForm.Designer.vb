@@ -38,6 +38,7 @@ Partial Class frmMainSelectionForm
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -54,7 +55,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button1.Location = New System.Drawing.Point(132, 121)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 23)
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Progress Bar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -108,7 +109,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button6.Location = New System.Drawing.Point(132, 63)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(91, 23)
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 7
         Me.Button6.Text = "StopWatch"
         Me.Button6.UseVisualStyleBackColor = True
@@ -117,7 +118,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button7.Location = New System.Drawing.Point(132, 92)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(91, 23)
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 8
         Me.Button7.Text = "CPU %"
         Me.Button7.UseVisualStyleBackColor = True
@@ -160,7 +161,7 @@ Partial Class frmMainSelectionForm
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(229, 63)
+        Me.Button12.Location = New System.Drawing.Point(213, 63)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(91, 23)
         Me.Button12.TabIndex = 13
@@ -171,25 +172,35 @@ Partial Class frmMainSelectionForm
         '
         Me.Button13.Location = New System.Drawing.Point(132, 150)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(91, 23)
+        Me.Button13.Size = New System.Drawing.Size(75, 23)
         Me.Button13.TabIndex = 14
         Me.Button13.Text = "IIF Example"
         Me.Button13.UseVisualStyleBackColor = True
         '
         'Button14
         '
-        Me.Button14.Location = New System.Drawing.Point(229, 92)
+        Me.Button14.Location = New System.Drawing.Point(213, 92)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(91, 23)
         Me.Button14.TabIndex = 15
         Me.Button14.Text = "Array For Each"
         Me.Button14.UseVisualStyleBackColor = True
         '
+        'Button15
+        '
+        Me.Button15.Location = New System.Drawing.Point(310, 63)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(115, 23)
+        Me.Button15.TabIndex = 16
+        Me.Button15.Text = "Overloaded Methods"
+        Me.Button15.UseVisualStyleBackColor = True
+        '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 275)
+        Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
@@ -228,4 +239,5 @@ Partial Class frmMainSelectionForm
     Friend WithEvents Button12 As Button
     Friend WithEvents Button13 As Button
     Friend WithEvents Button14 As Button
+    Friend WithEvents Button15 As Button
 End Class
