@@ -59,4 +59,8 @@
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         Call IFF_Example
     End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        Call ForEach_Example()
+    End Sub
 End Class
