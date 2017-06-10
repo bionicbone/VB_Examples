@@ -39,6 +39,7 @@ Partial Class frmMainSelectionForm
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -195,11 +196,21 @@ Partial Class frmMainSelectionForm
         Me.Button15.Text = "Overloaded Methods"
         Me.Button15.UseVisualStyleBackColor = True
         '
+        'Button16
+        '
+        Me.Button16.Location = New System.Drawing.Point(310, 92)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(115, 23)
+        Me.Button16.TabIndex = 17
+        Me.Button16.Text = "Concatenation Perf"
+        Me.Button16.UseVisualStyleBackColor = True
+        '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 275)
+        Me.Controls.Add(Me.Button16)
         Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button13)
@@ -240,4 +251,5 @@ Partial Class frmMainSelectionForm
     Friend WithEvents Button13 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents Button15 As Button
+    Friend WithEvents Button16 As Button
 End Class

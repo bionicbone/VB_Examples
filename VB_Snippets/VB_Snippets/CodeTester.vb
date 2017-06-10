@@ -4,7 +4,7 @@ Module CodeTester
 
     Sub TestThis()
         Dim sWatch As System.Diagnostics.Stopwatch
-
+        Dim TestPlusPlus As Integer = 0
         sWatch = New System.Diagnostics.Stopwatch()
 
         sWatch.Start()
@@ -19,13 +19,15 @@ Module CodeTester
 
             If N Mod 100 = 0 Then
                 Debug.Print(N)
+                TestPlusPlus += N
             End If
 
         Next
 
         sWatch.Stop()
 
-        Debug.Print(sWatch.Elapsed.ToString)
+        Debug.Print("Total = {0}", TestPlusPlus)
+        Debug.Print("Timer = {0}ms", sWatch.ElapsedMilliseconds.ToString)
 
 
     End Sub

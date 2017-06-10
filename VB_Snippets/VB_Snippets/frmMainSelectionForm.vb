@@ -67,4 +67,8 @@
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
         Call overloadedMethodsExample()
     End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        Call concatenationPerformance()
+    End Sub
 End Class

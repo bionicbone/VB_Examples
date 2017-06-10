@@ -146,6 +146,7 @@
     <Compile Include="SQL Write Example.vb" />
     <Compile Include="StopWatch Example.vb" />
     <Compile Include="SQL Table Exists Example.vb" />
+    <Compile Include="String Concatenation Example.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMainSelectionForm.resx">
