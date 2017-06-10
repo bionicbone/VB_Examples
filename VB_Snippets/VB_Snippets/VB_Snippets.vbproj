@@ -105,7 +105,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharArrayAndArrayReverse Example.vb" />
+    <Compile Include="Array CharArray and Reverse Example.vb" />
+    <Compile Include="Array For Each Example.vb" />
     <Compile Include="CodeTester.vb" />
     <Compile Include="CPU Example.vb" />
     <Compile Include="IIF Example.vb" />

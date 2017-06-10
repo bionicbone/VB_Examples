@@ -1,4 +1,4 @@
-﻿Module CharArrayAndArrayReverse_Example
+﻿Module ArrayCharArrayAndReverseExample
 
     Sub ReverseArray()
         Dim MyText As String = "You can get what you want out of life " &
