@@ -35,6 +35,8 @@ Partial Class frmMainSelectionForm
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -155,11 +157,31 @@ Partial Class frmMainSelectionForm
         Me.Button11.Text = "Create Database"
         Me.Button11.UseVisualStyleBackColor = True
         '
+        'Button12
+        '
+        Me.Button12.Location = New System.Drawing.Point(152, 150)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(84, 23)
+        Me.Button12.TabIndex = 13
+        Me.Button12.Text = "Array Reverse"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button13
+        '
+        Me.Button13.Location = New System.Drawing.Point(152, 179)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(84, 23)
+        Me.Button13.TabIndex = 14
+        Me.Button13.Text = "Button13"
+        Me.Button13.UseVisualStyleBackColor = True
+        '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 275)
+        Me.Controls.Add(Me.Button13)
+        Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button9)
@@ -192,4 +214,6 @@ Partial Class frmMainSelectionForm
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
 End Class

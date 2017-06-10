@@ -51,4 +51,12 @@
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         Call SQL_Create_Database()
     End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Call ReverseArray()
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Call IFF_Example
+    End Sub
 End Class
