@@ -109,6 +109,7 @@
     <Compile Include="Array For Each Example.vb" />
     <Compile Include="CodeTester.vb" />
     <Compile Include="CPU Example.vb" />
+    <Compile Include="Date Handling Example.vb" />
     <Compile Include="IIF Example.vb" />
     <Compile Include="Methods Overloaded Example.vb" />
     <Compile Include="SQL Create Database Example.vb" />

@@ -40,6 +40,7 @@ Partial Class frmMainSelectionForm
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -205,11 +206,21 @@ Partial Class frmMainSelectionForm
         Me.Button16.Text = "Concatenation Perf"
         Me.Button16.UseVisualStyleBackColor = True
         '
+        'Button17
+        '
+        Me.Button17.Location = New System.Drawing.Point(213, 121)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(91, 23)
+        Me.Button17.TabIndex = 18
+        Me.Button17.Text = "Handle Dates"
+        Me.Button17.UseVisualStyleBackColor = True
+        '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 275)
+        Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Button16)
         Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button14)
@@ -252,4 +263,5 @@ Partial Class frmMainSelectionForm
     Friend WithEvents Button14 As Button
     Friend WithEvents Button15 As Button
     Friend WithEvents Button16 As Button
+    Friend WithEvents Button17 As Button
 End Class

@@ -71,4 +71,8 @@
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
         Call concatenationPerformance()
     End Sub
+
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        Call Dates()
+    End Sub
 End Class
