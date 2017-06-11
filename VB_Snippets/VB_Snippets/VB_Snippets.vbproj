@@ -150,6 +150,8 @@
     <Compile Include="StopWatch Example.vb" />
     <Compile Include="SQL Table Exists Example.vb" />
     <Compile Include="String Concatenation Example.vb" />
+    <Compile Include="Truck.vb" />
+    <Compile Include="Vehicle.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMainSelectionForm.resx">

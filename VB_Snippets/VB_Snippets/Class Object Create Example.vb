@@ -6,9 +6,14 @@
         ' can hold different values in each of its properties as long as
         ' the "new" command is used.
 
-        ' NOTE: Both the following statments do the smae thing!
+        ' NOTE: Both the following statments do the same thing!
         Dim myNewCar1 As Car = New Car()
         Dim myNewCar2 As New Car()
+        ' This one uses the "overloaded constructor" to set the parameters in the one statement.
+        Dim myNewCar3 As New Car("Ford", "Excape", 2005, "White")
+
+
+        Debug.Print("The ""Constructor"" - ""Sub New"" in the Class set the make to: {0}", myNewCar1.Make)
 
         myNewCar1.Make = "Audi"
         myNewCar1.Model = "A4"
@@ -20,12 +25,12 @@
         myNewCar2.Year = 2004
         myNewCar2.Colour = "Silver"
 
-        Debug.Print("{0} - {1} - {2} - {3}",
+        Debug.Print("These Parameters for the 1st Car are set in the Module: {0} - {1} - {2} - {3}",
                     myNewCar1.Make,
                     myNewCar1.Model,
                     myNewCar1.Year,
                     myNewCar1.Colour)
-        Debug.Print("{0} - {1} - {2} - {3}",
+        Debug.Print("These Parameters for the 2nd Car are set in the Module: {0} - {1} - {2} - {3}",
                     myNewCar2.Make,
                     myNewCar2.Model,
                     myNewCar2.Year,
@@ -33,6 +38,7 @@
 
 
         ' using a Function in a Module, its a bit old fashioned now
+        ' NOTE: :C} set the format "Currency"
         Debug.Print("Car 1 Value: {0:C}", determineMarketValue(myNewCar1))
 
         ' but normally the Fuction would be in the Class, and called like this.
@@ -58,21 +64,37 @@
         For i = 1 To 100000
             Result = determineMarketValue(myNewCar1)
         Next
-        Debug.Print("Execution Time: {0}ms", sWatch.ElapsedMilliseconds)
+        Debug.Print("Execution Time for Module: {0}ms", sWatch.ElapsedMilliseconds)
 
-        ' Module Function
+        ' Class Function
         sWatch.Stop()
         sWatch.Reset()
         sWatch.Start()
         For i = 1 To 100000
             Result = myNewCar1.DetermineMarketValue()
         Next
-        Debug.Print("Execution Time: {0}ms", sWatch.ElapsedMilliseconds)
+        Debug.Print("Execution Time for Class: {0}ms", sWatch.ElapsedMilliseconds)
 
+        Dim myNewCar4 As New Car()
+        myNewCar4.Make = "BMW"
+        myNewCar4.Model = "745Li"
+        myNewCar4.Year = 2005
+        myNewCar4.Colour = "Black"
+        printVehicleDetails(myNewCar4)
+
+        Dim myNewTruck1 As New Truck()
+        With myNewTruck1
+            .Make = "Ford"
+            .Model = "F950"
+            .Year = 2006
+            .Colour = "Black"
+            .TowingCapacity = 1200
+        End With
+
+        printVehicleDetails(myNewTruck1)
     End Sub
 
     Function determineMarketValue(ByVal myCar As Car) As Decimal
-
         Dim carValue As Decimal
         If myCar.Year > 2008 Then
             carValue = 10000
@@ -80,7 +102,11 @@
             carValue = 2000
         End If
         Return carValue
-
     End Function
+
+    Sub printVehicleDetails(ByVal _vehicle As Vehicle)
+        Debug.Print("Here are the details: {0}",
+                    _vehicle.FormatMe())
+    End Sub
 
 End Module
