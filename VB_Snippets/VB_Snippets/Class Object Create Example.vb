@@ -9,7 +9,7 @@
         ' NOTE: Both the following statments do the same thing!
         Dim myNewCar1 As Car = New Car()
         Dim myNewCar2 As New Car()
-        ' This one uses the "overloaded constructor" to set the parameters in the one statement.
+        ' This one uses the "overloaded constructor" (the 2nd Sub New in Car Class) to set the parameters in the one statement.
         Dim myNewCar3 As New Car("Ford", "Excape", 2005, "White")
 
 
@@ -17,7 +17,7 @@
 
         myNewCar1.Make = "Audi"
         myNewCar1.Model = "A4"
-        myNewCar1.year = 2017
+        myNewCar1.Year = 2017
         myNewCar1.Colour = "Red"
 
         myNewCar2.Make = "Nissan"
@@ -80,6 +80,8 @@
         myNewCar4.Model = "745Li"
         myNewCar4.Year = 2005
         myNewCar4.Colour = "Black"
+        ' printVehicleDetails will use the FormatMe function from the Car Class 
+        ' because that is what we are passing.
         printVehicleDetails(myNewCar4)
 
         Dim myNewTruck1 As New Truck()
@@ -90,7 +92,8 @@
             .Colour = "Black"
             .TowingCapacity = 1200
         End With
-
+        ' printVehicleDetails will use the FormatMe function from the Truck Class 
+        ' because that is what we are passing.
         printVehicleDetails(myNewTruck1)
     End Sub
 
@@ -105,6 +108,8 @@
     End Function
 
     Sub printVehicleDetails(ByVal _vehicle As Vehicle)
+        ' This will use the FormatMe function from either Car or Truck
+        ' depending on which Vehicle has been passed. 
         Debug.Print("Here are the details: {0}",
                     _vehicle.FormatMe())
     End Sub
