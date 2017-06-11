@@ -107,7 +107,7 @@
   <ItemGroup>
     <Compile Include="Array CharArray and Reverse Example.vb" />
     <Compile Include="Array For Each Example.vb" />
-    <Compile Include="Class Example.vb" />
+    <Compile Include="Class Car.vb" />
     <Compile Include="Class Object Create Example.vb" />
     <Compile Include="CodeTester.vb" />
     <Compile Include="CPU Example.vb" />
@@ -150,8 +150,8 @@
     <Compile Include="StopWatch Example.vb" />
     <Compile Include="SQL Table Exists Example.vb" />
     <Compile Include="String Concatenation Example.vb" />
-    <Compile Include="Truck.vb" />
-    <Compile Include="Vehicle.vb" />
+    <Compile Include="Class Truck.vb" />
+    <Compile Include="Class Vehicle.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmMainSelectionForm.resx">
