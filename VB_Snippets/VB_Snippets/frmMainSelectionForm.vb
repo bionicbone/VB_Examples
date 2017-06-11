@@ -75,4 +75,8 @@
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
         Call Dates()
     End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        Call CreateObjectFromClass()
+    End Sub
 End Class

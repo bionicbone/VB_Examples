@@ -107,6 +107,8 @@
   <ItemGroup>
     <Compile Include="Array CharArray and Reverse Example.vb" />
     <Compile Include="Array For Each Example.vb" />
+    <Compile Include="Class Example.vb" />
+    <Compile Include="Class Object Create Example.vb" />
     <Compile Include="CodeTester.vb" />
     <Compile Include="CPU Example.vb" />
     <Compile Include="Date Handling Example.vb" />
