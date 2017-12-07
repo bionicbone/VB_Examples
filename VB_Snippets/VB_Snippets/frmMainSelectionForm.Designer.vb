@@ -56,7 +56,7 @@ Partial Class frmMainSelectionForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(132, 121)
+        Me.Button1.Location = New System.Drawing.Point(162, 314)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -67,7 +67,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button2.Location = New System.Drawing.Point(26, 208)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 23)
+        Me.Button2.Size = New System.Drawing.Size(109, 23)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "SQL Read"
         Me.Button2.UseVisualStyleBackColor = True
@@ -85,7 +85,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button3.Location = New System.Drawing.Point(26, 179)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 23)
+        Me.Button3.Size = New System.Drawing.Size(109, 23)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "SQL Write"
         Me.Button3.UseVisualStyleBackColor = True
@@ -94,7 +94,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button4.Location = New System.Drawing.Point(26, 237)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(100, 23)
+        Me.Button4.Size = New System.Drawing.Size(109, 23)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "SQL Update"
         Me.Button4.UseVisualStyleBackColor = True
@@ -110,7 +110,7 @@ Partial Class frmMainSelectionForm
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(132, 63)
+        Me.Button6.Location = New System.Drawing.Point(162, 256)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 7
@@ -119,7 +119,7 @@ Partial Class frmMainSelectionForm
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(132, 92)
+        Me.Button7.Location = New System.Drawing.Point(162, 285)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 8
@@ -130,7 +130,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button8.Location = New System.Drawing.Point(26, 63)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(100, 23)
+        Me.Button8.Size = New System.Drawing.Size(109, 23)
         Me.Button8.TabIndex = 9
         Me.Button8.Text = "Database Exists ?"
         Me.Button8.UseVisualStyleBackColor = True
@@ -139,7 +139,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button9.Location = New System.Drawing.Point(26, 92)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(100, 23)
+        Me.Button9.Size = New System.Drawing.Size(109, 23)
         Me.Button9.TabIndex = 10
         Me.Button9.Text = "Table Exists ?"
         Me.Button9.UseVisualStyleBackColor = True
@@ -148,7 +148,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button10.Location = New System.Drawing.Point(26, 150)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(100, 23)
+        Me.Button10.Size = New System.Drawing.Size(109, 23)
         Me.Button10.TabIndex = 11
         Me.Button10.Text = "Create Table"
         Me.Button10.UseVisualStyleBackColor = True
@@ -157,36 +157,36 @@ Partial Class frmMainSelectionForm
         '
         Me.Button11.Location = New System.Drawing.Point(26, 121)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(100, 23)
+        Me.Button11.Size = New System.Drawing.Size(109, 23)
         Me.Button11.TabIndex = 12
         Me.Button11.Text = "Create Database"
         Me.Button11.UseVisualStyleBackColor = True
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(213, 63)
+        Me.Button12.Location = New System.Drawing.Point(26, 285)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(91, 23)
+        Me.Button12.Size = New System.Drawing.Size(109, 23)
         Me.Button12.TabIndex = 13
-        Me.Button12.Text = "Array Reverse"
+        Me.Button12.Text = "Get Web Page"
         Me.Button12.UseVisualStyleBackColor = True
         '
         'Button13
         '
-        Me.Button13.Location = New System.Drawing.Point(132, 150)
+        Me.Button13.Location = New System.Drawing.Point(26, 314)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(75, 23)
+        Me.Button13.Size = New System.Drawing.Size(109, 23)
         Me.Button13.TabIndex = 14
-        Me.Button13.Text = "IIF Example"
+        Me.Button13.Text = "Search Web Data"
         Me.Button13.UseVisualStyleBackColor = True
         '
         'Button14
         '
-        Me.Button14.Location = New System.Drawing.Point(213, 92)
+        Me.Button14.Location = New System.Drawing.Point(162, 63)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(91, 23)
+        Me.Button14.Size = New System.Drawing.Size(75, 23)
         Me.Button14.TabIndex = 15
-        Me.Button14.Text = "Array For Each"
+        Me.Button14.Text = "Write File"
         Me.Button14.UseVisualStyleBackColor = True
         '
         'Button15
@@ -229,7 +229,7 @@ Partial Class frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(591, 275)
+        Me.ClientSize = New System.Drawing.Size(591, 366)
         Me.Controls.Add(Me.Button18)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Button16)

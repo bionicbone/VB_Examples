@@ -111,9 +111,12 @@
     <Compile Include="Class Object Create Example.vb" />
     <Compile Include="CodeTester.vb" />
     <Compile Include="CPU Example.vb" />
+    <Compile Include="File Read Example.vb" />
+    <Compile Include="File Write Example.vb" />
     <Compile Include="Date Handling Example.vb" />
     <Compile Include="IIF Example.vb" />
     <Compile Include="Methods Overloaded Example.vb" />
+
     <Compile Include="SQL Create Database Example.vb" />
     <Compile Include="SQL Create Table Example.vb" />
     <Compile Include="SQL Database Exists.vb" />
@@ -149,6 +152,8 @@
     <Compile Include="SQL Write Example.vb" />
     <Compile Include="StopWatch Example.vb" />
     <Compile Include="SQL Table Exists Example.vb" />
+    <Compile Include="WEB Search Web Page Data.vb" />
+    <Compile Include="WEB Get Web Page.vb" />
     <Compile Include="String Concatenation Example.vb" />
     <Compile Include="Class Truck.vb" />
     <Compile Include="Class Vehicle.vb" />
