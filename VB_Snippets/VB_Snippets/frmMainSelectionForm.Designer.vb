@@ -39,6 +39,9 @@ Partial Class frmMainSelectionForm
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -55,7 +58,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button1.Location = New System.Drawing.Point(162, 314)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(84, 23)
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Progress Bar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -109,7 +112,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button6.Location = New System.Drawing.Point(162, 256)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(84, 23)
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 7
         Me.Button6.Text = "StopWatch"
         Me.Button6.UseVisualStyleBackColor = True
@@ -118,7 +121,7 @@ Partial Class frmMainSelectionForm
         '
         Me.Button7.Location = New System.Drawing.Point(162, 285)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(84, 23)
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 8
         Me.Button7.Text = "CPU %"
         Me.Button7.UseVisualStyleBackColor = True
@@ -188,18 +191,48 @@ Partial Class frmMainSelectionForm
         '
         'Button15
         '
-        Me.Button15.Location = New System.Drawing.Point(162, 92)
+        Me.Button15.Location = New System.Drawing.Point(310, 63)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(75, 23)
+        Me.Button15.Size = New System.Drawing.Size(115, 23)
         Me.Button15.TabIndex = 16
-        Me.Button15.Text = "Read File"
+        Me.Button15.Text = "Overloaded Methods"
         Me.Button15.UseVisualStyleBackColor = True
+        '
+        'Button16
+        '
+        Me.Button16.Location = New System.Drawing.Point(310, 92)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(115, 23)
+        Me.Button16.TabIndex = 17
+        Me.Button16.Text = "Concatenation Perf"
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'Button17
+        '
+        Me.Button17.Location = New System.Drawing.Point(213, 121)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(91, 23)
+        Me.Button17.TabIndex = 18
+        Me.Button17.Text = "Handle Dates"
+        Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Button18
+        '
+        Me.Button18.Location = New System.Drawing.Point(132, 179)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(75, 23)
+        Me.Button18.TabIndex = 19
+        Me.Button18.Text = "Classes"
+        Me.Button18.UseVisualStyleBackColor = True
         '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 366)
+        Me.Controls.Add(Me.Button18)
+        Me.Controls.Add(Me.Button17)
+        Me.Controls.Add(Me.Button16)
         Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button13)
@@ -236,8 +269,11 @@ Partial Class frmMainSelectionForm
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Button12 As System.Windows.Forms.Button
-    Friend WithEvents Button13 As System.Windows.Forms.Button
-    Friend WithEvents Button14 As System.Windows.Forms.Button
-    Friend WithEvents Button15 As System.Windows.Forms.Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Button15 As Button
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button17 As Button
+    Friend WithEvents Button18 As Button
 End Class
