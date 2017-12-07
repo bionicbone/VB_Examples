@@ -53,7 +53,8 @@
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        ' Return the Web Page HTML in wData
+
+    ' Return the Web Page HTML in wData
         Dim wData As String = WRequest("http://www.winzip.com", "GET", "")
         If Mid(wData, 1, 18) <> "An error occurred:" Then
             Debug.Print("Web Page Html:" & vbNewLine)
@@ -101,9 +102,20 @@
         End If
     End Sub
 
+
     Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
-        If ReadFile() = False Then
-            Debug.Print("File Failed to Read")
-        End If
+        Call overloadedMethodsExample()
+    End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        Call concatenationPerformance()
+    End Sub
+
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        Call Dates()
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        Call CreateObjectFromClass()
     End Sub
 End Class
