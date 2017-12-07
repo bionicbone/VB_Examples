@@ -1,34 +1,34 @@
 ﻿Public Class frmMainSelectionForm
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnProgressBar_Click(sender As Object, e As EventArgs) Handles btnProgressBar.Click
         frmProgressBar.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnSQLRead_Click(sender As Object, e As EventArgs) Handles btnSQLRead.Click
         Call SQL_Read()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub btnSQLWrite_Click(sender As Object, e As EventArgs) Handles btnSQLWrite.Click
         Call SQL_Write()
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub btnSQLUpdate_Click(sender As Object, e As EventArgs) Handles btnSQLUpdate.Click
         Call SQL_Update()
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub btnTestThis_Click(sender As Object, e As EventArgs) Handles btnTestThis.Click
         Call TestThis()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub btnStopWatch_Click(sender As Object, e As EventArgs) Handles btnStopWatch.Click
         Call myStopWatch()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub btnCPU_Click(sender As Object, e As EventArgs) Handles btnCPU.Click
         Call CPU()
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub btnDataBaseExists_Click(sender As Object, e As EventArgs) Handles btnDataBaseExists.Click
         If CheckDatabaseExists("LT5-PC\SQLEXPRESS", "HobbyKingDB") <> False Then
             Debug.Print("Database Exists")
         Else
@@ -36,7 +36,7 @@
         End If
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub btnTableExists_Click(sender As Object, e As EventArgs) Handles btnTableExists.Click
         If CheckTableExists("LT5-PC\SQLEXPRESS", "HobbyKingDB", "tblHKPrices") <> False Then
             Debug.Print("Table Exists")
         Else
@@ -44,17 +44,17 @@
         End If
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub btnCreateTable_Click(sender As Object, e As EventArgs) Handles btnCreateTable.Click
         Call SQL_Create_Table()
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+    Private Sub btnCreateDataBase_Click(sender As Object, e As EventArgs) Handles btnCreateDataBase.Click
         Call SQL_Create_Database()
     End Sub
 
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+    Private Sub btnGetWebPage_Click(sender As Object, e As EventArgs) Handles btnGetWebPage.Click
 
-    ' Return the Web Page HTML in wData
+        ' Return the Web Page HTML in wData
         Dim wData As String = WRequest("http://www.winzip.com", "GET", "")
         If Mid(wData, 1, 18) <> "An error occurred:" Then
             Debug.Print("Web Page Html:" & vbNewLine)
@@ -64,7 +64,7 @@
         End If
     End Sub
 
-    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+    Private Sub btnSearchWebData_Click(sender As Object, e As EventArgs) Handles btnSearchWebData.Click
         ' Use WRequest to bring back the Web Page as HTML, here we'll just prime the variable.
         Dim wData As String = ""
         wData = "<meta http-equiv=""Content-Type"" content=""text/html; charset=utf-8"" />" & _
@@ -96,26 +96,47 @@
         End If
     End Sub
 
-    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
-        If WriteFile = False Then
+    Private Sub btnWriteFile_Click(sender As Object, e As EventArgs) Handles btnWriteFile.Click
+        If WriteFile() = False Then
             Debug.Print("File Failed to Write")
         End If
     End Sub
 
 
-    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+    Private Sub btnOverloadedMethods_Click(sender As Object, e As EventArgs) Handles btnOverloadedMethods.Click
         Call overloadedMethodsExample()
     End Sub
 
-    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+    Private Sub btnConcatenationPerf_Click(sender As Object, e As EventArgs) Handles btnConcatenationPerf.Click
         Call concatenationPerformance()
     End Sub
 
-    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+    Private Sub btnHandleDates_Click(sender As Object, e As EventArgs) Handles btnHandleDates.Click
         Call Dates()
     End Sub
 
-    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+    Private Sub btnClasses_Click(sender As Object, e As EventArgs) Handles btnClasses.Click
         Call CreateObjectFromClass()
+    End Sub
+
+    Private Sub frmMainSelectionForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnArrayReversal_Click(sender As Object, e As EventArgs) Handles btnArrayReversal.Click
+        Call ReverseArray()
+    End Sub
+
+
+    Private Sub btnIIF_Example_Click(sender As Object, e As EventArgs) Handles btnIIF_Example.Click
+        Call IFF_Example()
+    End Sub
+
+    Private Sub btnArrayForEach_Click(sender As Object, e As EventArgs) Handles btnArrayForEach.Click
+        Call ForEach_Example()
+    End Sub
+
+    Private Sub btnReadFile_Click(sender As Object, e As EventArgs) Handles btnReadFile.Click
+        Call ReadFile()
     End Sub
 End Class

@@ -26,6 +26,7 @@ Module File_Read_Example
                 Debug.Print("Successful...")
             Else
                 ' ### WRITE A STANDARD TEXT FILE HERE ###
+                Debug.Print("Write File first!")
                 Return False
             End If
         Catch e As Exception
