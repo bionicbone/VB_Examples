@@ -23,25 +23,29 @@ Partial Class frmMainSelectionForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnProgressBar = New System.Windows.Forms.Button()
+        Me.btnSQLRead = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
+        Me.btnSQLWrite = New System.Windows.Forms.Button()
+        Me.btnSQLUpdate = New System.Windows.Forms.Button()
+        Me.btnTestThis = New System.Windows.Forms.Button()
+        Me.btnStopWatch = New System.Windows.Forms.Button()
+        Me.btnCPU = New System.Windows.Forms.Button()
+        Me.btnDataBaseExists = New System.Windows.Forms.Button()
+        Me.btnTableExists = New System.Windows.Forms.Button()
+        Me.btnCreateTable = New System.Windows.Forms.Button()
+        Me.btnCreateDataBase = New System.Windows.Forms.Button()
+        Me.btnGetWebPage = New System.Windows.Forms.Button()
+        Me.btnSearchWebData = New System.Windows.Forms.Button()
+        Me.btnWriteFile = New System.Windows.Forms.Button()
+        Me.btnOverloadedMethods = New System.Windows.Forms.Button()
+        Me.btnConcatenationPerf = New System.Windows.Forms.Button()
+        Me.btnHandleDates = New System.Windows.Forms.Button()
+        Me.btnClasses = New System.Windows.Forms.Button()
+        Me.btnArrayReversal = New System.Windows.Forms.Button()
+        Me.btnIIF_Example = New System.Windows.Forms.Button()
+        Me.btnArrayForEach = New System.Windows.Forms.Button()
+        Me.btnReadFile = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -54,23 +58,23 @@ Partial Class frmMainSelectionForm
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Kev's Code Snippets"
         '
-        'Button1
+        'btnProgressBar
         '
-        Me.Button1.Location = New System.Drawing.Point(162, 314)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Progress Bar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnProgressBar.Location = New System.Drawing.Point(162, 314)
+        Me.btnProgressBar.Name = "btnProgressBar"
+        Me.btnProgressBar.Size = New System.Drawing.Size(75, 23)
+        Me.btnProgressBar.TabIndex = 1
+        Me.btnProgressBar.Text = "Progress Bar"
+        Me.btnProgressBar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnSQLRead
         '
-        Me.Button2.Location = New System.Drawing.Point(26, 208)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(109, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "SQL Read"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSQLRead.Location = New System.Drawing.Point(26, 208)
+        Me.btnSQLRead.Name = "btnSQLRead"
+        Me.btnSQLRead.Size = New System.Drawing.Size(109, 23)
+        Me.btnSQLRead.TabIndex = 2
+        Me.btnSQLRead.Text = "SQL Read"
+        Me.btnSQLRead.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -81,174 +85,214 @@ Partial Class frmMainSelectionForm
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Examples:"
         '
-        'Button3
+        'btnSQLWrite
         '
-        Me.Button3.Location = New System.Drawing.Point(26, 179)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(109, 23)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "SQL Write"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSQLWrite.Location = New System.Drawing.Point(26, 179)
+        Me.btnSQLWrite.Name = "btnSQLWrite"
+        Me.btnSQLWrite.Size = New System.Drawing.Size(109, 23)
+        Me.btnSQLWrite.TabIndex = 4
+        Me.btnSQLWrite.Text = "SQL Write"
+        Me.btnSQLWrite.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnSQLUpdate
         '
-        Me.Button4.Location = New System.Drawing.Point(26, 237)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(109, 23)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "SQL Update"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnSQLUpdate.Location = New System.Drawing.Point(26, 237)
+        Me.btnSQLUpdate.Name = "btnSQLUpdate"
+        Me.btnSQLUpdate.Size = New System.Drawing.Size(109, 23)
+        Me.btnSQLUpdate.TabIndex = 5
+        Me.btnSQLUpdate.Text = "SQL Update"
+        Me.btnSQLUpdate.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnTestThis
         '
-        Me.Button5.Location = New System.Drawing.Point(504, 63)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Test This"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnTestThis.Location = New System.Drawing.Point(504, 63)
+        Me.btnTestThis.Name = "btnTestThis"
+        Me.btnTestThis.Size = New System.Drawing.Size(75, 23)
+        Me.btnTestThis.TabIndex = 6
+        Me.btnTestThis.Text = "Test This"
+        Me.btnTestThis.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnStopWatch
         '
-        Me.Button6.Location = New System.Drawing.Point(162, 256)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 7
-        Me.Button6.Text = "StopWatch"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnStopWatch.Location = New System.Drawing.Point(162, 256)
+        Me.btnStopWatch.Name = "btnStopWatch"
+        Me.btnStopWatch.Size = New System.Drawing.Size(75, 23)
+        Me.btnStopWatch.TabIndex = 7
+        Me.btnStopWatch.Text = "StopWatch"
+        Me.btnStopWatch.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnCPU
         '
-        Me.Button7.Location = New System.Drawing.Point(162, 285)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "CPU %"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnCPU.Location = New System.Drawing.Point(162, 285)
+        Me.btnCPU.Name = "btnCPU"
+        Me.btnCPU.Size = New System.Drawing.Size(75, 23)
+        Me.btnCPU.TabIndex = 8
+        Me.btnCPU.Text = "CPU %"
+        Me.btnCPU.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btnDataBaseExists
         '
-        Me.Button8.Location = New System.Drawing.Point(26, 63)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(109, 23)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = "Database Exists ?"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnDataBaseExists.Location = New System.Drawing.Point(26, 63)
+        Me.btnDataBaseExists.Name = "btnDataBaseExists"
+        Me.btnDataBaseExists.Size = New System.Drawing.Size(109, 23)
+        Me.btnDataBaseExists.TabIndex = 9
+        Me.btnDataBaseExists.Text = "Database Exists ?"
+        Me.btnDataBaseExists.UseVisualStyleBackColor = True
         '
-        'Button9
+        'btnTableExists
         '
-        Me.Button9.Location = New System.Drawing.Point(26, 92)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(109, 23)
-        Me.Button9.TabIndex = 10
-        Me.Button9.Text = "Table Exists ?"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btnTableExists.Location = New System.Drawing.Point(26, 92)
+        Me.btnTableExists.Name = "btnTableExists"
+        Me.btnTableExists.Size = New System.Drawing.Size(109, 23)
+        Me.btnTableExists.TabIndex = 10
+        Me.btnTableExists.Text = "Table Exists ?"
+        Me.btnTableExists.UseVisualStyleBackColor = True
         '
-        'Button10
+        'btnCreateTable
         '
-        Me.Button10.Location = New System.Drawing.Point(26, 150)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(109, 23)
-        Me.Button10.TabIndex = 11
-        Me.Button10.Text = "Create Table"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.btnCreateTable.Location = New System.Drawing.Point(26, 150)
+        Me.btnCreateTable.Name = "btnCreateTable"
+        Me.btnCreateTable.Size = New System.Drawing.Size(109, 23)
+        Me.btnCreateTable.TabIndex = 11
+        Me.btnCreateTable.Text = "Create Table"
+        Me.btnCreateTable.UseVisualStyleBackColor = True
         '
-        'Button11
+        'btnCreateDataBase
         '
-        Me.Button11.Location = New System.Drawing.Point(26, 121)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(109, 23)
-        Me.Button11.TabIndex = 12
-        Me.Button11.Text = "Create Database"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.btnCreateDataBase.Location = New System.Drawing.Point(26, 121)
+        Me.btnCreateDataBase.Name = "btnCreateDataBase"
+        Me.btnCreateDataBase.Size = New System.Drawing.Size(109, 23)
+        Me.btnCreateDataBase.TabIndex = 12
+        Me.btnCreateDataBase.Text = "Create Database"
+        Me.btnCreateDataBase.UseVisualStyleBackColor = True
         '
-        'Button12
+        'btnGetWebPage
         '
-        Me.Button12.Location = New System.Drawing.Point(26, 285)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(109, 23)
-        Me.Button12.TabIndex = 13
-        Me.Button12.Text = "Get Web Page"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.btnGetWebPage.Location = New System.Drawing.Point(26, 285)
+        Me.btnGetWebPage.Name = "btnGetWebPage"
+        Me.btnGetWebPage.Size = New System.Drawing.Size(109, 23)
+        Me.btnGetWebPage.TabIndex = 13
+        Me.btnGetWebPage.Text = "Get Web Page"
+        Me.btnGetWebPage.UseVisualStyleBackColor = True
         '
-        'Button13
+        'btnSearchWebData
         '
-        Me.Button13.Location = New System.Drawing.Point(26, 314)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(109, 23)
-        Me.Button13.TabIndex = 14
-        Me.Button13.Text = "Search Web Data"
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.btnSearchWebData.Location = New System.Drawing.Point(26, 314)
+        Me.btnSearchWebData.Name = "btnSearchWebData"
+        Me.btnSearchWebData.Size = New System.Drawing.Size(109, 23)
+        Me.btnSearchWebData.TabIndex = 14
+        Me.btnSearchWebData.Text = "Search Web Data"
+        Me.btnSearchWebData.UseVisualStyleBackColor = True
         '
-        'Button14
+        'btnWriteFile
         '
-        Me.Button14.Location = New System.Drawing.Point(162, 63)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(75, 23)
-        Me.Button14.TabIndex = 15
-        Me.Button14.Text = "Write File"
-        Me.Button14.UseVisualStyleBackColor = True
+        Me.btnWriteFile.Location = New System.Drawing.Point(162, 63)
+        Me.btnWriteFile.Name = "btnWriteFile"
+        Me.btnWriteFile.Size = New System.Drawing.Size(75, 23)
+        Me.btnWriteFile.TabIndex = 15
+        Me.btnWriteFile.Text = "Write File"
+        Me.btnWriteFile.UseVisualStyleBackColor = True
         '
-        'Button15
+        'btnOverloadedMethods
         '
-        Me.Button15.Location = New System.Drawing.Point(310, 63)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(115, 23)
-        Me.Button15.TabIndex = 16
-        Me.Button15.Text = "Overloaded Methods"
-        Me.Button15.UseVisualStyleBackColor = True
+        Me.btnOverloadedMethods.Location = New System.Drawing.Point(310, 63)
+        Me.btnOverloadedMethods.Name = "btnOverloadedMethods"
+        Me.btnOverloadedMethods.Size = New System.Drawing.Size(115, 23)
+        Me.btnOverloadedMethods.TabIndex = 16
+        Me.btnOverloadedMethods.Text = "Overloaded Methods"
+        Me.btnOverloadedMethods.UseVisualStyleBackColor = True
         '
-        'Button16
+        'btnConcatenationPerf
         '
-        Me.Button16.Location = New System.Drawing.Point(310, 92)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(115, 23)
-        Me.Button16.TabIndex = 17
-        Me.Button16.Text = "Concatenation Perf"
-        Me.Button16.UseVisualStyleBackColor = True
+        Me.btnConcatenationPerf.Location = New System.Drawing.Point(310, 92)
+        Me.btnConcatenationPerf.Name = "btnConcatenationPerf"
+        Me.btnConcatenationPerf.Size = New System.Drawing.Size(115, 23)
+        Me.btnConcatenationPerf.TabIndex = 17
+        Me.btnConcatenationPerf.Text = "Concatenation Perf"
+        Me.btnConcatenationPerf.UseVisualStyleBackColor = True
         '
-        'Button17
+        'btnHandleDates
         '
-        Me.Button17.Location = New System.Drawing.Point(213, 121)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(91, 23)
-        Me.Button17.TabIndex = 18
-        Me.Button17.Text = "Handle Dates"
-        Me.Button17.UseVisualStyleBackColor = True
+        Me.btnHandleDates.Location = New System.Drawing.Point(310, 150)
+        Me.btnHandleDates.Name = "btnHandleDates"
+        Me.btnHandleDates.Size = New System.Drawing.Size(91, 23)
+        Me.btnHandleDates.TabIndex = 18
+        Me.btnHandleDates.Text = "Handle Dates"
+        Me.btnHandleDates.UseVisualStyleBackColor = True
         '
-        'Button18
+        'btnClasses
         '
-        Me.Button18.Location = New System.Drawing.Point(132, 179)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(75, 23)
-        Me.Button18.TabIndex = 19
-        Me.Button18.Text = "Classes"
-        Me.Button18.UseVisualStyleBackColor = True
+        Me.btnClasses.Location = New System.Drawing.Point(162, 179)
+        Me.btnClasses.Name = "btnClasses"
+        Me.btnClasses.Size = New System.Drawing.Size(75, 23)
+        Me.btnClasses.TabIndex = 19
+        Me.btnClasses.Text = "Classes"
+        Me.btnClasses.UseVisualStyleBackColor = True
+        '
+        'btnArrayReversal
+        '
+        Me.btnArrayReversal.Location = New System.Drawing.Point(310, 180)
+        Me.btnArrayReversal.Name = "btnArrayReversal"
+        Me.btnArrayReversal.Size = New System.Drawing.Size(91, 23)
+        Me.btnArrayReversal.TabIndex = 20
+        Me.btnArrayReversal.Text = "Array Reversal"
+        Me.btnArrayReversal.UseVisualStyleBackColor = True
+        '
+        'btnIIF_Example
+        '
+        Me.btnIIF_Example.Location = New System.Drawing.Point(310, 267)
+        Me.btnIIF_Example.Name = "btnIIF_Example"
+        Me.btnIIF_Example.Size = New System.Drawing.Size(91, 23)
+        Me.btnIIF_Example.TabIndex = 21
+        Me.btnIIF_Example.Text = "IIF Example"
+        Me.btnIIF_Example.UseVisualStyleBackColor = True
+        '
+        'btnArrayForEach
+        '
+        Me.btnArrayForEach.Location = New System.Drawing.Point(310, 210)
+        Me.btnArrayForEach.Name = "btnArrayForEach"
+        Me.btnArrayForEach.Size = New System.Drawing.Size(91, 23)
+        Me.btnArrayForEach.TabIndex = 22
+        Me.btnArrayForEach.Text = "Array ForEach"
+        Me.btnArrayForEach.UseVisualStyleBackColor = True
+        '
+        'btnReadFile
+        '
+        Me.btnReadFile.Location = New System.Drawing.Point(162, 93)
+        Me.btnReadFile.Name = "btnReadFile"
+        Me.btnReadFile.Size = New System.Drawing.Size(75, 23)
+        Me.btnReadFile.TabIndex = 23
+        Me.btnReadFile.Text = "Read File"
+        Me.btnReadFile.UseVisualStyleBackColor = True
         '
         'frmMainSelectionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(591, 366)
-        Me.Controls.Add(Me.Button18)
-        Me.Controls.Add(Me.Button17)
-        Me.Controls.Add(Me.Button16)
-        Me.Controls.Add(Me.Button15)
-        Me.Controls.Add(Me.Button14)
-        Me.Controls.Add(Me.Button13)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnReadFile)
+        Me.Controls.Add(Me.btnArrayForEach)
+        Me.Controls.Add(Me.btnIIF_Example)
+        Me.Controls.Add(Me.btnArrayReversal)
+        Me.Controls.Add(Me.btnClasses)
+        Me.Controls.Add(Me.btnHandleDates)
+        Me.Controls.Add(Me.btnConcatenationPerf)
+        Me.Controls.Add(Me.btnOverloadedMethods)
+        Me.Controls.Add(Me.btnWriteFile)
+        Me.Controls.Add(Me.btnSearchWebData)
+        Me.Controls.Add(Me.btnGetWebPage)
+        Me.Controls.Add(Me.btnCreateDataBase)
+        Me.Controls.Add(Me.btnCreateTable)
+        Me.Controls.Add(Me.btnTableExists)
+        Me.Controls.Add(Me.btnDataBaseExists)
+        Me.Controls.Add(Me.btnCPU)
+        Me.Controls.Add(Me.btnStopWatch)
+        Me.Controls.Add(Me.btnTestThis)
+        Me.Controls.Add(Me.btnSQLUpdate)
+        Me.Controls.Add(Me.btnSQLWrite)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnSQLRead)
+        Me.Controls.Add(Me.btnProgressBar)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmMainSelectionForm"
         Me.Text = "frmMainSelectionForm"
@@ -257,23 +301,27 @@ Partial Class frmMainSelectionForm
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnProgressBar As System.Windows.Forms.Button
+    Friend WithEvents btnSQLRead As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button13 As Button
-    Friend WithEvents Button14 As Button
-    Friend WithEvents Button15 As Button
-    Friend WithEvents Button16 As Button
-    Friend WithEvents Button17 As Button
-    Friend WithEvents Button18 As Button
+    Friend WithEvents btnSQLWrite As System.Windows.Forms.Button
+    Friend WithEvents btnSQLUpdate As System.Windows.Forms.Button
+    Friend WithEvents btnTestThis As System.Windows.Forms.Button
+    Friend WithEvents btnStopWatch As System.Windows.Forms.Button
+    Friend WithEvents btnCPU As System.Windows.Forms.Button
+    Friend WithEvents btnDataBaseExists As System.Windows.Forms.Button
+    Friend WithEvents btnTableExists As System.Windows.Forms.Button
+    Friend WithEvents btnCreateTable As System.Windows.Forms.Button
+    Friend WithEvents btnCreateDataBase As System.Windows.Forms.Button
+    Friend WithEvents btnGetWebPage As Button
+    Friend WithEvents btnSearchWebData As Button
+    Friend WithEvents btnWriteFile As Button
+    Friend WithEvents btnOverloadedMethods As Button
+    Friend WithEvents btnConcatenationPerf As Button
+    Friend WithEvents btnHandleDates As Button
+    Friend WithEvents btnClasses As Button
+    Friend WithEvents btnArrayReversal As System.Windows.Forms.Button
+    Friend WithEvents btnIIF_Example As System.Windows.Forms.Button
+    Friend WithEvents btnArrayForEach As System.Windows.Forms.Button
+    Friend WithEvents btnReadFile As System.Windows.Forms.Button
 End Class
